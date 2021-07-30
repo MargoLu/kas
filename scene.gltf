@@ -3,56 +3,74 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 23646,
+      "count": 3435,
       "max": [
-        0.069447323679924011,
-        0.057160094380378723,
-        0.056404091417789459
+        10.574901580810547,
+        10.543102264404297,
+        11.069679260253906
       ],
       "min": [
-        -0.056418444961309433,
-        -0.011946899816393852,
-        -0.056404091417789459
+        -9.8765010833740234,
+        -15.891383171081543,
+        -1.7053842544555664
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 283752,
+      "byteOffset": 41220,
       "componentType": 5126,
-      "count": 23646,
+      "count": 3435,
       "max": [
         1,
-        1,
+        0.99958974123001099,
         1
       ],
       "min": [
         -1,
-        -0.99998611211776733,
+        -0.99981892108917236,
         -1
       ],
       "type": "VEC3"
     },
     {
-      "bufferView": 1,
+      "bufferView": 3,
       "componentType": 5126,
-      "count": 23646,
+      "count": 3435,
       "max": [
-        0.9978104829788208,
-        0.99793219566345215
+        1,
+        0.99997329711914062,
+        0.99993926286697388,
+        1
       ],
       "min": [
-        0.0019692410714924335,
-        0.00034687243169173598
+        -1,
+        -0.99997341632843018,
+        -1,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3435,
+      "max": [
+        0.99902802705764771,
+        0.99995201826095581
+      ],
+      "min": [
+        6.1999999161344022e-05,
+        0.00068800000008195639
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 107952,
+      "count": 13698,
       "max": [
-        23645
+        3434
       ],
       "min": [
         0
@@ -62,72 +80,110 @@
   ],
   "asset": {
     "extras": {
-      "author": "pavanahirrao100 (https://sketchfab.com/pavanahirrao100)",
+      "author": "SuperMopsek (https://sketchfab.com/pajamakeke)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/construction-helmet-47a4490dc6024782a057e529a266dba0",
-      "title": "Construction helmet"
+      "source": "https://sketchfab.com/models/2f9546f0aa9e4dbdade316e1b9d59f04",
+      "title": "Construction Helmet (Orange)"
     },
-    "generator": "Sketchfab-10.33.2",
+    "generator": "Sketchfab-3.29.1",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 431808,
+      "byteLength": 54792,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 189168,
-      "byteOffset": 431808,
+      "byteLength": 27480,
+      "byteOffset": 54792,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 567504,
-      "byteOffset": 620976,
+      "byteLength": 82440,
+      "byteOffset": 82272,
       "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 54960,
+      "byteOffset": 164712,
+      "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
     }
   ],
   "buffers": [
     {
-      "byteLength": 1188480,
+      "byteLength": 219672,
       "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Helmet_normal.png"
+    },
+    {
+      "uri": "textures/Helmet_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Helmet_metallicRoughness.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "Mtl1",
+      "name": "Helmet",
+      "normalTexture": {
+        "index": 0,
+        "scale": 1,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 2,
+        "strength": 1,
+        "texCoord": 0
+      },
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.49203814104980514,
-          0.49203814104980514,
-          0.49203814104980514,
+          1,
+          1,
+          1,
           1
         ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 1,
+        "metallicRoughnessTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "roughnessFactor": 1
       }
     }
   ],
   "meshes": [
     {
-      "name": "Body_1_Mtl1_0",
+      "name": "tz.012_Helmet_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TEXCOORD_0": 2
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
           },
-          "indices": 3,
+          "indices": 4,
           "material": 0,
           "mode": 4
         }
@@ -151,24 +207,6 @@
       "children": [
         2
       ],
-      "matrix": [
-        3.164096372587494,
-        4.6148198987525859,
-        0.26105163699845413,
-        0,
-        4.6221724343971289,
-        -3.1600715420909467,
-        -0.16026480441934776,
-        0,
-        0.015236902464459079,
-        0.30594214406494835,
-        -5.5930653844475842,
-        0,
-        0.0085340831428766251,
-        -0.054257661104202271,
-        -0.054731037467718124,
-        1
-      ],
       "name": "RootNode (model correction matrix)"
     },
     {
@@ -181,24 +219,23 @@
         0,
         0,
         0,
+        0,
+        1,
+        0,
+        0,
         -1,
         0,
-        0,
-        0,
-        0,
-        -1,
         0,
         0,
         0,
         0,
         1
       ],
-      "name": "4efba993d957426b8b5ab7c993139806.fbx"
+      "name": "e670fcf5046443df9abbc1e4282dc8c6.fbx"
     },
     {
       "children": [
-        4,
-        6
+        4
       ],
       "name": "RootNode"
     },
@@ -207,103 +244,36 @@
         5
       ],
       "matrix": [
-        -0.57735026918962573,
-        0.57735026918962584,
-        -0.57735026918962584,
-        0,
-        -0.40824829046386313,
-        0.40824829046386302,
-        0.81649658092772615,
-        0,
-        0.70710678118654757,
-        0.70710678118654757,
-        0,
-        0,
-        0.57735025882720947,
-        -0.57735025882720947,
-        0.57735025882720947,
-        1
-      ],
-      "name": "Default Camera 1"
-    },
-    {
-      "name": ""
-    },
-    {
-      "children": [
-        7
-      ],
-      "matrix": [
         1,
-        -6.6538537006482918e-16,
-        1.2999872505124137e-16,
         0,
-        -1.2999872505124122e-16,
+        0,
+        0,
+        0,
         2.2204460492503131e-16,
-        1,
-        0,
-        -6.6538537006482918e-16,
         -1,
+        0,
+        0,
+        1,
         2.2204460492503131e-16,
         0,
-        7.8373642503725262e-18,
-        0.022606596350669861,
-        0.011946899816393852,
-        1
-      ],
-      "name": "Assembly-3"
-    },
-    {
-      "children": [
-        8
-      ],
-      "matrix": [
-        1,
-        -2.4651903288156619e-32,
-        7.960126126361983e-33,
-        0,
-        2.4651903288156619e-32,
-        1,
-        0,
-        0,
-        -7.960126126361983e-33,
-        1.9623225942860438e-64,
-        1,
-        0,
         0,
         0,
         0,
         1
       ],
-      "name": "tg"
-    },
-    {
-      "children": [
-        9
-      ],
-      "matrix": [
-        1,
-        -2.4651903288156619e-32,
-        7.960126126361983e-33,
-        0,
-        2.4651903288156619e-32,
-        1,
-        0,
-        0,
-        -7.960126126361983e-33,
-        1.9623225942860438e-64,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "name": "Body_1"
+      "name": "tz.012"
     },
     {
       "mesh": 0,
-      "name": "Body_1_Mtl1_0"
+      "name": "tz.012_Helmet_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
     }
   ],
   "scene": 0,
@@ -313,6 +283,20 @@
       "nodes": [
         0
       ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
     }
   ]
 }
